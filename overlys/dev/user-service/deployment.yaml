@@ -17,4 +17,4 @@ spec:
         - name: user-service
           image: aashraf756/springboot-user-service:v1.1
           ports:
-            - containerPort: 5000
+            - containerPort: 8080
