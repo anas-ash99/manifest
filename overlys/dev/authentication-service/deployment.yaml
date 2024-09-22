@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: authentication-service
-          image: aashraf756/authentication-service:v1.0.0
+          image: aashraf756/authentication-service:v1.0.1
           ports:
             - containerPort: 8080
