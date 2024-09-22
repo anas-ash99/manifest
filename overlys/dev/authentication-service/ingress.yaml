@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: authentication-service-ingress
+  namespace: default
+  annotations:
+    konghq.com/strip-path: "true" # Optional
+spec:
+  rules:
+    - host: microservices.local  # Adjust as needed
+      http:
+        paths:
+          - path: /authentication
+            pathType: Prefix
+            backend:
+              service:
+                name: authentication-service
+                port:
+                  number: 80
