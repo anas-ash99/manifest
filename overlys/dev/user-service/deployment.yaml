@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: aashraf756/user-service:v1.0.5
+          image: aashraf756/springboot-user-service:v1.1
           ports:
             - containerPort: 5000
